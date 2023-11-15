@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: istio-grafana-dashboards
   namespace: istio-system
+  labels:
+    grafana_dashboard: '1'
 
 data:
   istio-performance-dashboard.json: |
@@ -17,6 +19,8 @@ kind: ConfigMap
 metadata:
   name: istio-services-grafana-dashboards
   namespace: istio-system
+  labels:
+    grafana_dashboard: '1'
 
 data:
   istio-extension-dashboard.json: |
